@@ -1,4 +1,4 @@
-# Group-36
+# Group-36 - M2R Project: Dynamics of multicomponent mechanical systems
 Code used to create the plots and investigate our project
 
 A brief description of the code in the 'Extra material' section can be found below:
