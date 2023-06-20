@@ -1,0 +1,212 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6369,        202]
+NotebookOptionsPosition[      5954,        187]
+NotebookOutlinePosition[      6415,        204]
+CellTagsIndexPosition[      6372,        201]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"P", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{"0.25", ",", " ", "0.64", ",", " ", "4"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Part", "[", 
+  RowBox[{"P", ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"A", " ", "=", " ", 
+  RowBox[{"Array", "[", 
+   RowBox[{
+    RowBox[{"#", "&"}], ",", "10", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", "*", 
+         RowBox[{"P", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], ",", 
+      RowBox[{"1", "/", 
+       RowBox[{"(", 
+        RowBox[{"2", "*", 
+         RowBox[{"P", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], ")"}]}]}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Insert", "[", 
+   RowBox[{"A", ",", "0.781", ",", "5"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"B", " ", "=", " ", 
+   RowBox[{"Array", "[", 
+    RowBox[{
+     RowBox[{"#", "&"}], ",", "10", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"4", "/", 
+        RowBox[{"(", "1.2", ")"}]}], ",", 
+       RowBox[{"4", "/", 
+        RowBox[{"(", "0.5", ")"}]}]}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ContourPlot3D", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"0.5", "*", 
+       RowBox[{"x", "^", "2"}]}], "+", 
+      RowBox[{"0.5", "*", 
+       RowBox[{"y", "^", "2"}]}], " ", "+", 
+      RowBox[{"z", "^", "2"}]}], " ", "==", " ", "1"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+    RowBox[{"Mesh", "->", "10"}], ",", 
+    RowBox[{"MeshFunctions", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#1", "^", "2"}], "/", "0.5"}], "  ", "+", " ", 
+         RowBox[{
+          RowBox[{"#2", " ", "^", "2"}], "/", "1.2"}], "+", " ", 
+         RowBox[{
+          RowBox[{"#3", "^", "2"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1.4", "*", "0.5"}], ")"}]}]}], ")"}], "&"}], "}"}]}], ",",
+     "  ", 
+    RowBox[{"ColorFunction", "->", "\"\<Pastel\>\""}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ContourPlot3D", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "0.5"}], "*", 
+       RowBox[{"x", "^", "2"}]}], "+", 
+      RowBox[{
+       RowBox[{"-", "0.5"}], "*", 
+       RowBox[{"y", "^", "2"}]}], " ", "+", 
+      RowBox[{"z", "^", "2"}]}], " ", "==", " ", "1"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Mesh", "->", "10"}], ",", 
+    RowBox[{"MeshFunctions", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#1", "^", "2"}], "/", "0.5"}], "  ", "+", " ", 
+         RowBox[{
+          RowBox[{"#2", " ", "^", "2"}], "/", "1.2"}], " ", "-", " ", 
+         RowBox[{
+          RowBox[{"#3", "^", "2"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"1.4", "*", "0.5"}], ")"}]}]}], ")"}], "&"}], "}"}]}], ",",
+     "  ", 
+    RowBox[{"ColorFunction", "->", "\"\<Pastel\>\""}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ContourPlot3D", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"z", "^", "2"}], " ", "==", " ", "1"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"z", ",", 
+      RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Mesh", "->", "10"}], ",", 
+    RowBox[{"MeshFunctions", "->", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#1", "^", "2"}], "/", "0.5"}], "  ", "+", " ", 
+         RowBox[{
+          RowBox[{"#2", " ", "^", "2"}], "/", "1.2"}]}], " ", ")"}], "&"}], 
+      "}"}]}], ",", "  ", 
+    RowBox[{"ColorFunction", "->", "\"\<Pastel\>\""}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"ContourPlot3D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"z", "^", "2"}], " ", "==", " ", "1"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", 
+     RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Mesh", "->", "10"}], ",", 
+   RowBox[{"MeshFunctions", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"#3", " ", "^", "2"}], "/", "1.2"}], " ", ")"}], "&"}], 
+     "}"}]}], ",", "  ", 
+   RowBox[{"ColorFunction", "->", "\"\<Pastel\>\""}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.896287303944769*^9, 
+  3.896287320091167*^9}},ExpressionUUID->"02570246-0996-4a78-9f60-\
+23665299d919"]
+},
+WindowSize->{808, 694},
+WindowMargins->{{Automatic, -19}, {16, Automatic}},
+TaggingRules-><|"SlideshowSettings" -> <|"Toolbar" -> True|>|>,
+FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fc592d40-2f85-4f72-8375-bb17e08db842"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 5392, 165, 430, "Input",ExpressionUUID->"02570246-0996-4a78-9f60-23665299d919"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
